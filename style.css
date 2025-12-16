@@ -7,7 +7,8 @@
 }
 
 .photo-row img {
-  width: 150px;
+  width: 120px;       /* smaller than before */
+  height: auto;       /* keep aspect ratio */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
@@ -22,6 +23,5 @@
 .mini-messages p {
   margin: 5px 0;
 }
-
 
 
