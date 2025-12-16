@@ -15,23 +15,78 @@ body {
   text-align: center;
 }
 
-/* Wrapper: first memory stack + second memory side by side */
+/* Memory wrapper: side by side on desktop */
 .memory-wrapper {
   display: flex;
   gap: 20px;
   justify-content: center;
   align-items: flex-start;
+  flex-wrap: wrap; /* wrap on small screens */
 }
 
 /* First memory stacked vertically */
 .first-memory {
   display: flex;
   flex-direction: column;
-  gap: 15px; /* space between photos */
+  gap: 15px;
   align-items: center;
 }
 
 .first-memory img {
-  width: 150px;       /* medium si*
+  width: 150px; /* medium size */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Text under photos in bright pink */
+.photo-text {
+  font-size: 20px;
+  color: #ff3399; /* bright pink */
+  text-align: center;
+  margin: 5px 0;
+}
+
+/* Second memory on side */
+.second-memory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.second-memory img {
+  width: 150px; /* same as first memory */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Text under second memory photo */
+.second-memory p {
+  font-size: 18px;
+  color: #ff3399;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* Next page button */
+.button-container {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ff3399;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff66b2;
+}
 
 
