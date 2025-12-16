@@ -1,0 +1,32 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: #ffe6f0;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.memories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.memory img {
+  width: 200px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.memory p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
