@@ -28,7 +28,7 @@ body {
 .first-memory {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 15px; /* space between photos */
   align-items: center;
 }
 
@@ -47,7 +47,7 @@ body {
   margin: 5px 0;
 }
 
-/* Second memory on side */
+/* Second memory (girlfriend photo) same size */
 .second-memory {
   display: flex;
   flex-direction: column;
@@ -56,18 +56,10 @@ body {
 }
 
 .second-memory img {
-  width: 150px; /* same as first memory */
+  width: 150px; /* same as first memory photos */
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-/* Text under second memory photo */
-.second-memory p {
-  font-size: 18px;
-  color: #ff3399;
-  text-align: center;
-  margin-top: 5px;
 }
 
 /* Next page button */
@@ -88,5 +80,7 @@ button {
 button:hover {
   background-color: #ff66b2;
 }
+
+
 
 
