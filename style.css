@@ -15,83 +15,28 @@ body {
   text-align: center;
 }
 
-/* Wrapper: first memory stack + second memory side by side */
+/* Wrapper: first memory stack + second memory beside */
 .memory-wrapper {
   display: flex;
   gap: 20px;
   justify-content: center;
   align-items: flex-start;
-  flex-wrap: wrap; /* wrap on small screens */
+  flex-wrap: nowrap; /* prevent girlfriend photo from dropping below */
 }
 
 /* First memory stacked vertically */
 .first-memory {
   display: flex;
   flex-direction: column;
-  gap: 15px; /* space between photos */
+  gap: 15px;
   align-items: center;
 }
 
 .first-memory img {
-  width: 300px;       /* stacked photos slightly bigger */
+  width: 280px;       /* slightly smaller to fit beside girlfriend photo */
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-/* Mini messages in bright pink and readable */
-.mini-messages {
-  margin-top: 5px;
-  color: #ff3399;     /* bright pink */
-  font-size: 20px;    /* readable */
-  text-align: center;
-  line-height: 1.4;   /* space between lines */
-}
-
-.mini-messages p {
-  margin: 5px 0;
-}
-
-/* Second memory (girlfriend photo) */
-.second-memory {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 15px;
-}
-
-.second-memory img {
-  width: 250px;       /* slightly smaller than first stack */
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.second-memory p {
-  margin-top: 5px;
-  font-size: 18px;
-  color: #ff3399;
-  text-align: center;
-}
-
-/* Next page button */
-.button-container {
-  margin-top: 20px;
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 10px;
-  border: none;
-  background-color: #ff3399;
-  color: white;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #ff66b2;
-}
+  box
 
 
 
