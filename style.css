@@ -1,16 +1,24 @@
 .photo-row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;         
   justify-content: center;
-  gap: 10px;
+  gap: 8px;                
   margin-top: 10px;
 }
 
 .photo-row img {
-  width: 120px;       /* smaller than before */
-  height: auto;       /* keep aspect ratio */
+  width: 45%;              /* two photos per row on phones */
+  max-width: 120px;
+  height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+@media screen and (min-width: 600px) {
+  .photo-row img {
+    width: 18%;             /* 5 photos per row on desktop */
+    max-width: 150px;
+  }
 }
 
 .mini-messages {
@@ -23,5 +31,6 @@
 .mini-messages p {
   margin: 5px 0;
 }
+
 
 
