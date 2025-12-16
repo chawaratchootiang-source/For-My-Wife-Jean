@@ -1,36 +1,91 @@
-.photo-row {
-  display: flex;
-  flex-wrap: wrap;         
-  justify-content: center;
-  gap: 8px;                
-  margin-top: 10px;
+/* General container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+  font-family: Arial, sans-serif;
 }
 
-.photo-row img {
-  width: 45%;              /* two photos per row on phones */
-  max-width: 120px;
+/* Memories layout */
+.memories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* First memory stacked vertically */
+.first-memory {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.first-memory img {
+  width: 150px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-@media screen and (min-width: 600px) {
-  .photo-row img {
-    width: 18%;             /* 5 photos per row on desktop */
-    max-width: 150px;
-  }
-}
-
+/* Mini messages under first memory */
 .mini-messages {
-  margin-top: 10px;
-  text-align: center;
+  margin-top: 5px;
   color: #ff3399;
   font-size: 16px;
 }
 
 .mini-messages p {
-  margin: 5px 0;
+  margin: 3px 0;
 }
+
+/* Second memory next to first */
+.second-memory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second-memory img {
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Next page button */
+.button-container {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ff3399;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff66b2;
+}
+
+/* Responsive for phones */
+@media screen and (max-width: 600px) {
+  .memories {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .second-memory img {
+    width: 150px;
+  }
+}
+
 
 
 
