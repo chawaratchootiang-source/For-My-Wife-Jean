@@ -33,7 +33,7 @@ body {
 }
 
 .first-memory img {
-  width: 200px;       /* slightly bigger */
+  width: 250px;       /* bigger size */
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -61,7 +61,7 @@ body {
 }
 
 .second-memory img {
-  width: 200px;       /* match first memory photos */
+  width: 250px;       /* match first memory photos */
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -92,3 +92,5 @@ button {
 button:hover {
   background-color: #ff66b2;
 }
+
+
