@@ -33,10 +33,60 @@ body {
 }
 
 .first-memory img {
-  width: 280px;       /* slightly smaller to fit beside girlfriend photo */
+  width: 300px;       /* stacked photos bigger */
   height: auto;
   border-radius: 10px;
-  box
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
 
+/* Mini messages in bright pink */
+.mini-messages {
+  margin-top: 5px;
+  color: #ff3399;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.4;
+}
 
+.mini-messages p {
+  margin: 5px 0;
+}
 
+/* Second memory (girlfriend photo) beside the stack */
+.second-memory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;  /* align with top of stacked photos */
+}
+
+.second-memory img {
+  width: 220px;       /* girlfriend photo */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.second-memory p {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #ff3399;
+  text-align: center;
+}
+
+/* Next page button */
+.button-container {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ff3399;
+  color: white;
+  cursor: pointer;
+}
+
+button:hov
