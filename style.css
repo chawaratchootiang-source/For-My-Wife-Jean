@@ -1,7 +1,6 @@
 /* Background */
 body {
-  background: url('flowers-background.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background-color: #ffc0cb; /* solid pink background */
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -33,16 +32,16 @@ body {
 }
 
 .first-memory img {
-  width: 120px;
+  width: 120px;       /* small size */
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* Mini messages in pink */
+/* Mini messages in bright pink */
 .mini-messages {
   margin-top: 5px;
-  color: #ff3399;
+  color: #ff3399;     /* bright pink */
   font-size: 16px;
   text-align: center;
 }
@@ -59,7 +58,7 @@ body {
 }
 
 .second-memory img {
-  width: 150px;
+  width: 150px;       /* medium size */
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -83,5 +82,7 @@ button {
 button:hover {
   background-color: #ff66b2;
 }
+
+
 
 
