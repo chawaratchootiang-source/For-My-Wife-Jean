@@ -1,18 +1,27 @@
-/* General container */
+/* Background */
+body {
+  background: url('flowers-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+
+/* Container */
 .container {
   max-width: 900px;
   margin: 0 auto;
   padding: 15px;
   text-align: center;
-  font-family: Arial, sans-serif;
 }
 
-/* Memories layout */
-.memories {
+/* Wrapper: first memory stack + second memory side by side */
+.memory-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 /* First memory stacked vertically */
@@ -24,24 +33,25 @@
 }
 
 .first-memory img {
-  width: 150px;
+  width: 120px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* Mini messages under first memory */
+/* Mini messages in pink */
 .mini-messages {
   margin-top: 5px;
   color: #ff3399;
   font-size: 16px;
+  text-align: center;
 }
 
 .mini-messages p {
   margin: 3px 0;
 }
 
-/* Second memory next to first */
+/* Second memory on side, medium size */
 .second-memory {
   display: flex;
   flex-direction: column;
@@ -49,7 +59,7 @@
 }
 
 .second-memory img {
-  width: 180px;
+  width: 150px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -73,19 +83,5 @@ button {
 button:hover {
   background-color: #ff66b2;
 }
-
-/* Responsive for phones */
-@media screen and (max-width: 600px) {
-  .memories {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .second-memory img {
-    width: 150px;
-  }
-}
-
-
 
 
