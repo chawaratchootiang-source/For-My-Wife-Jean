@@ -15,7 +15,7 @@ body {
   text-align: center;
 }
 
-/* Memory wrapper: side by side on desktop */
+/* Wrapper: first memory stack + second memory side by side */
 .memory-wrapper {
   display: flex;
   gap: 20px;
@@ -33,21 +33,26 @@ body {
 }
 
 .first-memory img {
-  width: 150px; /* medium size */
+  width: 180px;       /* medium-big size */
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* Text under photos in bright pink */
-.photo-text {
-  font-size: 20px;
-  color: #ff3399; /* bright pink */
+/* Mini messages in bright pink and readable */
+.mini-messages {
+  margin-top: 5px;
+  color: #ff3399;     /* bright pink */
+  font-size: 20px;    /* readable */
   text-align: center;
+  line-height: 1.4;   /* space between lines */
+}
+
+.mini-messages p {
   margin: 5px 0;
 }
 
-/* Second memory (girlfriend photo) same size */
+/* Second memory on side, medium size */
 .second-memory {
   display: flex;
   flex-direction: column;
@@ -56,31 +61,17 @@ body {
 }
 
 .second-memory img {
-  width: 150px; /* same as first memory photos */
+  width: 150px;       /* same as before */
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* Next page button */
-.button-container {
-  margin-top: 20px;
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 10px;
-  border: none;
-  background-color: #ff3399;
-  color: white;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #ff66b2;
-}
-
+.second-memory p {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #ff3399;
+  text-ali
 
 
 
